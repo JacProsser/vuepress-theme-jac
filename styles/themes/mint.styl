@@ -1,0 +1,141 @@
+@import '../variables.styl';
+
+.jac-theme-mint {
+	a,
+	p a code,
+	.theme-default-content code {
+		color: $mintAccentColor;
+	}
+
+	// @parent-theme/components/AlgoliaSearchBox.vue
+	.algolia-search-wrapper .algolia-autocomplete {
+		.algolia-docsearch-suggestion {
+			.algolia-docsearch-suggestion--category-header {
+				background-color: darken($mintAccentColor, 10%);
+			}
+
+			.algolia-docsearch-suggestion--subcategory-column {
+				.algolia-docsearch-suggestion--highlight {
+					color: $mintAccentColor;
+				}
+			}
+		}
+
+		.algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
+			box-shadow: inset 0 -2px 0 0 rgba($mintAccentColor, 0.8);
+		}
+
+		.algolia-docsearch-suggestion--highlight {
+			color: $mintAccentColor;
+		}
+	}
+
+	// @parent-theme/components/Home.vue
+	.hero .action-button {
+		background-color: $mintAccentColor;
+		border-bottom-color: darken($mintAccentColor, 10%);
+
+		&:hover {
+			background-color: lighten($mintAccentColor, 10%);
+		}
+	}
+
+	// @parent-theme/components/NavLinks.vue
+	.nav-links {
+		a,
+		.dropdown-wrapper .dropdown-title,
+		.dropdown-wrapper .mobile-dropdown-title,
+		.dropdown-wrapper .nav-dropdown .dropdown-item a {
+			color: inherit;
+
+			&:hover,
+			&.router-link-active {
+				color: $mintAccentColor;
+			}
+		}
+
+		.dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {
+			border-left-color: $mintAccentColor;
+		}
+	}
+
+	@media (min-width: $MQMobile) {
+		.nav-item > a:not(.external) {
+			&:hover,
+			&.router-link-active {
+				border-bottom-color: $mintAccentColor;
+			}
+		}
+	}
+
+	// @parent-theme/components/PageEdit.vue
+	.page-edit {
+		.edit-link a {
+			color: $mintAccentColor;
+		}
+
+		.last-updated .prefix {
+			color: $mintAccentColor;
+		}
+	}
+
+	// @vuepress/plugin-search/SearchBox.vue
+	.search-box {
+		input:focus {
+			border-color: alpha($mintAccentColor, 0.75);
+		}
+
+		.suggestion {
+			&.focused a {
+				color: $mintAccentColor;
+			}
+		}
+	}
+
+	// @parent-theme/components/SidebarLink.vue
+	&.jac-theme-dark {
+		a.sidebar-link {
+			color: $darkAltTextColor;
+		}
+	}
+
+	// @parent-theme/components/SidebarLink.vue
+	a.sidebar-link {
+		color: $textColor;
+
+		&:hover {
+			color: $mintAccentColor;
+		}
+
+		&.active {
+			color: $mintAccentColor;
+			border-left-color: $mintAccentColor;
+		}
+	}
+
+	// @vuepress/plugin-pwa/lib/SWUpdatePopup.vue
+	.sw-update-popup {
+		border-color: $mintAccentColor;
+	}
+
+	// @vuepress/plugin-nprogress/nprogress.styl
+	#nprogress {
+		.bar {
+			background-color: $mintAccentColor;
+		}
+
+		.peg {
+			box-shadow: 0 0 10px $mintAccentColor, 0 0 5px $mintAccentColor;
+		}
+
+		.spinner-icon {
+			border-top-color: $mintAccentColor;
+			border-left-color: $mintAccentColor;
+		}
+	}
+
+	// @vuepress/plugin-back-to-top/BackToTop.vue
+	.go-to-top {
+		color: $mintAccentColor !important
+	}
+}
