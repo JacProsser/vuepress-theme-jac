@@ -91,16 +91,16 @@ export default {
 				background-color: $accentColor;
 			}
 
-			&.mint-theme {
-				background-color: $mintAccentColor;
+			&.green-theme {
+				background-color: $greenAccentColor;
 			}
 
 			&.red-theme {
 				background-color: $redAccentColor;
 			}
 
-			&.purple-theme {
-				background-color: $purpleAccentColor;
+			&.yellow-theme {
+				background-color: $yellowAccentColor;
 			}
 		}
 	}

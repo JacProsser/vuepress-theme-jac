@@ -1,42 +1,42 @@
 @import '../variables.styl';
 
-.jac-theme-mint {
+.jac-theme-yellow {
 	a,
 	p a code,
 	.theme-default-content code {
-		color: $mintAccentColor;
+		color: $yellowAccentColor;
 	}
 
 	// @parent-theme/components/AlgoliaSearchBox.vue
 	.algolia-search-wrapper .algolia-autocomplete {
 		.algolia-docsearch-suggestion {
 			.algolia-docsearch-suggestion--category-header {
-				background-color: darken($mintAccentColor, 10%);
+				background-color: darken($yellowAccentColor, 10%);
 			}
 
 			.algolia-docsearch-suggestion--subcategory-column {
 				.algolia-docsearch-suggestion--highlight {
-					color: $mintAccentColor;
+					color: $yellowAccentColor;
 				}
 			}
 		}
 
 		.algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
-			box-shadow: inset 0 -2px 0 0 rgba($mintAccentColor, 0.8);
+			box-shadow: inset 0 -2px 0 0 rgba($yellowAccentColor, 0.8);
 		}
 
 		.algolia-docsearch-suggestion--highlight {
-			color: $mintAccentColor;
+			color: $yellowAccentColor;
 		}
 	}
 
 	// @parent-theme/components/Home.vue
 	.hero .action-button {
-		background-color: $mintAccentColor;
-		border-bottom-color: darken($mintAccentColor, 10%);
+		background-color: $yellowAccentColor;
+		border-bottom-color: darken($yellowAccentColor, 10%);
 
 		&:hover {
-			background-color: lighten($mintAccentColor, 10%);
+			background-color: lighten($yellowAccentColor, 10%);
 		}
 	}
 
@@ -50,12 +50,12 @@
 
 			&:hover,
 			&.router-link-active {
-				color: $mintAccentColor;
+				color: $yellowAccentColor;
 			}
 		}
 
 		.dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {
-			border-left-color: $mintAccentColor;
+			border-left-color: $yellowAccentColor;
 		}
 	}
 
@@ -63,7 +63,7 @@
 		.nav-item > a:not(.external) {
 			&:hover,
 			&.router-link-active {
-				border-bottom-color: $mintAccentColor;
+				border-bottom-color: $yellowAccentColor;
 			}
 		}
 	}
@@ -71,23 +71,23 @@
 	// @parent-theme/components/PageEdit.vue
 	.page-edit {
 		.edit-link a {
-			color: $mintAccentColor;
+			color: $yellowAccentColor;
 		}
 
 		.last-updated .prefix {
-			color: $mintAccentColor;
+			color: $yellowAccentColor;
 		}
 	}
 
 	// @vuepress/plugin-search/SearchBox.vue
 	.search-box {
 		input:focus {
-			border-color: alpha($mintAccentColor, 0.75);
+			border-color: alpha($yellowAccentColor, 0.75);
 		}
 
 		.suggestion {
 			&.focused a {
-				color: $mintAccentColor;
+				color: $yellowAccentColor;
 			}
 		}
 	}
@@ -104,38 +104,38 @@
 		color: $textColor;
 
 		&:hover {
-			color: $mintAccentColor;
+			color: $yellowAccentColor;
 		}
 
 		&.active {
-			color: $mintAccentColor;
-			border-left-color: $mintAccentColor;
+			color: $yellowAccentColor;
+			border-left-color: $yellowAccentColor;
 		}
 	}
 
 	// @vuepress/plugin-pwa/lib/SWUpdatePopup.vue
 	.sw-update-popup {
-		border-color: $mintAccentColor;
+		border-color: $yellowAccentColor;
 	}
 
 	// @vuepress/plugin-nprogress/nprogress.styl
 	#nprogress {
 		.bar {
-			background-color: $mintAccentColor;
+			background-color: $yellowAccentColor;
 		}
 
 		.peg {
-			box-shadow: 0 0 10px $mintAccentColor, 0 0 5px $mintAccentColor;
+			box-shadow: 0 0 10px $yellowAccentColor, 0 0 5px $yellowAccentColor;
 		}
 
 		.spinner-icon {
-			border-top-color: $mintAccentColor;
-			border-left-color: $mintAccentColor;
+			border-top-color: $yellowAccentColor;
+			border-left-color: $yellowAccentColor;
 		}
 	}
 
 	// @vuepress/plugin-back-to-top/BackToTop.vue
 	.go-to-top {
-		color: $mintAccentColor !important
+		background: $yellowAccentColor !important;
 	}
 }

@@ -4,7 +4,7 @@ export default {
 	mixins: [themeHandler],
 	created() {
 		const {
-			colorThemes = ['mint', 'red', 'purple'],
+			colorThemes = ['green', 'red', 'yellow'],
 			defaultColorTheme = 'default',
 			defaultDarkTheme = false,
 			disableDarkTheme = false,
@@ -14,7 +14,7 @@ export default {
 			logo,
 		} = this.$site.themeConfig.jac || {}
 
-		const themes = colorThemes || ['mint', 'red', 'purple']
+		const themes = colorThemes || ['green', 'red', 'yellow']
 		const hasThemes = Array.isArray(themes) && themes.length > 0
 
 		this.$site.themeConfig.jac = {
