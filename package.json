@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-jac",
-  "version": "1.9.0",
+  "version": "2.0.0",
   "description": "vuepress theme used by discord-buttons",
   "main": "index.js",
   "dependencies": {},
